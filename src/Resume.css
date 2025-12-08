@@ -1,0 +1,390 @@
+.app-root {
+  min-height: 100vh;
+  margin: 0;
+  padding: 16px 8px;
+  background: #111827;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-bar {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto 8px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.download-btn {
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: #ffffff;
+  color: #111827;
+}
+
+.download-btn:hover {
+  background: #111827;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+/* Center the resume shell */
+
+.resume-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* ===== SHELL LAYOUT ===== */
+
+.resume-shell {
+  width: 100%;
+  max-width: 980px;
+  background: #f9fafb;
+  border-radius: 4px;
+  box-shadow: 0 15px 50px rgba(15, 23, 42, 0.5);
+  display: grid;
+  grid-template-columns: minmax(0, 3.2fr) minmax(0, 1.3fr);
+  box-sizing: border-box;
+  margin: 12px auto 20px;
+}
+
+/* LEFT MAIN COLUMN */
+
+.main-column {
+  padding: 18px 20px 14px 20px;
+  background: #ffffff;
+}
+
+/* RIGHT SIDEBAR */
+
+.side-column {
+  padding: 18px 16px 14px 16px;
+  background: #e5edf7;
+  border-left: 1px solid #d1d5db;
+}
+
+/* ===== HEADER (NAME + ROLE) ===== */
+
+.name-block {
+  margin-bottom: 8px;
+}
+
+.resume-name {
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.resume-role {
+  margin: 2px 0 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+/* ===== MAIN SECTIONS ===== */
+
+.resume-section {
+  margin-bottom: 9px;
+}
+
+.section-title {
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #1f2937;
+  margin: 0 0 3px;
+}
+
+.section-text {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #111827;
+}
+
+.item {
+  margin-top: 4px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.item-title {
+  margin: 0;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.item-meta {
+  font-size: 0.76rem;
+  color: #6b7280;
+}
+
+/* bullets */
+
+.bullet-list {
+  margin: 3px 0 0;
+  padding-left: 16px;
+  color: #374151;
+  font-size: 0.79rem;
+}
+
+.bullet-list li + li {
+  margin-top: 2px;
+}
+
+.compact-list li + li {
+  margin-top: 1px;
+}
+
+/* ===== SIDEBAR SECTIONS ===== */
+
+.side-section {
+  margin-bottom: 9px;
+}
+
+.side-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #111827;
+  margin: 0 0 3px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.78rem;
+  color: #111827;
+}
+
+/* non-clickable rows (location, phone, email) */
+.contact-static {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* clickable rows (LinkedIn, GitHub, Portfolio) */
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #111827;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.contact-list svg {
+  font-size: 0.9rem;
+  pointer-events: none;
+}
+
+/* sidebar bullets */
+
+.side-bullets {
+  list-style: disc;
+  padding-left: 15px;
+  margin: 2px 0 0;
+  font-size: 0.78rem;
+  color: #1f2937;
+}
+
+.side-bullets li + li {
+  margin-top: 2px;
+}
+
+/* education in sidebar */
+
+.edu-item {
+  margin-top: 3px;
+}
+
+.edu-course {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.edu-meta {
+  margin: 0;
+  font-size: 0.76rem;
+  color: #4b5563;
+}
+
+/* LINKS */
+
+a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE (SCREEN) ===== */
+
+@media (max-width: 880px) {
+  .resume-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .side-column {
+    border-left: none;
+    border-top: 1px solid #d1d5db;
+  }
+}
+
+@media (max-width: 520px) {
+  .main-column {
+    padding: 14px 10px;
+  }
+
+  .side-column {
+    padding: 12px 10px;
+  }
+
+  .resume-name {
+    font-size: 1.7rem;
+  }
+
+  .resume-role {
+    font-size: 0.85rem;
+  }
+
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ===== PRINT (PDF) ===== */
+
+@page {
+  size: A4;
+  margin: 8mm 6mm;
+}
+
+@media print {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .app-root {
+    padding: 0;
+    background: #ffffff;
+  }
+
+  .top-bar {
+    display: none;
+  }
+
+  .resume-shell {
+    box-shadow: none;
+    border-radius: 0;
+    max-width: 100%;
+    margin: 0;
+    font-size: 0.72rem;
+    grid-template-columns: minmax(0, 3.2fr) minmax(0, 1.3fr);
+  }
+
+  .main-column {
+    padding: 6px 8px 5px 8px;
+  }
+
+  .side-column {
+    padding: 6px 6px 5px 6px;
+  }
+
+  .resume-name {
+    font-size: 1.35rem;
+  }
+
+  .resume-role {
+    font-size: 0.76rem;
+  }
+
+  .section-title,
+  .side-title {
+    font-size: 0.65rem;
+  }
+
+  .section-text {
+    font-size: 0.7rem;
+  }
+
+  .item-title {
+    font-size: 0.74rem;
+  }
+
+  .item-meta,
+  .edu-meta,
+  .edu-course {
+    font-size: 0.68rem;
+  }
+
+  .bullet-list,
+  .side-bullets {
+    font-size: 0.7rem;
+  }
+}
+
+/* SKILL GROUPS */
+.skill-group {
+  margin-bottom: 10px;
+}
+
+.skill-label {
+  margin: 0 0 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-tag {
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: #e5e7eb;
+  font-size: 0.68rem;
+  color: #111827;
+  border: 1px solid #d1d5db;
+}
+
+.skill-inline-text {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #374151;
+}

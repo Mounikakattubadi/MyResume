@@ -14,28 +14,27 @@ function Resume() {
     const resumeRef = useRef(null);
 
     const handlePrint = useReactToPrint({
-        contentRef: resumeRef, // react-to-print v3 API
+        contentRef: resumeRef,
     });
 
     return (
         <div className="app-root">
-            {/* Top bar with download button */}
+            {/* Top bar */}
             <div className="top-bar">
                 <button className="download-btn" onClick={handlePrint}>
                     Download PDF
                 </button>
             </div>
 
-            {/* Centered resume */}
             <div className="resume-page">
                 <main className="resume-shell" ref={resumeRef}>
-                    {/* LEFT MAIN COLUMN */}
+                    {/* LEFT COLUMN */}
                     <section className="main-column">
-                        {/* NAME + ROLE */}
+                        {/* HEADER */}
                         <header className="name-block">
                             <h1 className="resume-name">Mounika Kattubadi</h1>
                             <p className="resume-role">
-                                Software Engineer · Full Stack Developer (MERN)
+                                Software Engineer · Full Stack (MERN)
                             </p>
                         </header>
 
@@ -43,14 +42,10 @@ function Resume() {
                         <section className="resume-section">
                             <h2 className="section-title">Summary</h2>
                             <p className="section-text">
-                                Full-stack MERN developer with hands-on experience building and
-                                deploying production web applications for recycling,
-                                manufacturing, and B2B marketplace domains. Comfortable taking
-                                Figma designs to pixel-perfect React, building APIs with
-                                Node.js/Express, and working with MongoDB for schema design and
-                                performance. Focused on clean code, usable interfaces, and
-                                delivering business value quickly.
+                                Full Stack Software Engineer with hands-on experience building and deploying production-grade web applications for B2B and manufacturing domains. Completed 7+
+                                industrial projects. Strong backend experience in designing REST APIs, authentication systems, invoice generation, email automation, and admin workflows. Comfortable owning features end-to-end from frontend to backend and deployment.
                             </p>
+
                         </section>
 
                         {/* WORK EXPERIENCE */}
@@ -60,233 +55,148 @@ function Resume() {
                             <div className="item">
                                 <div className="item-header">
                                     <h3 className="item-title">
-                                        Full Stack Web Developer · Vikah Ecotech
+                                        Full Stack Developer · Vikah Ecotech
                                     </h3>
                                     <span className="item-meta">
-                                        Sep 2024 – Present · Nagole, Hyderabad
+                                        Sep 2024 – Present · Hyderabad
                                     </span>
                                 </div>
+
                                 <ul className="bullet-list">
                                     <li>
-                                        Develop and maintain production websites and dashboards
-                                        using the MERN stack for recycling and rubber industries.
+                                        Developed and maintained production websites and internal
+                                        dashboards for recycling and manufacturing businesses.
                                     </li>
                                     <li>
-                                        Translate Figma UI/UX into reusable, responsive React
-                                        components aligned with brand and requirements.
+                                        Implemented server-side business logic for enquiry handling,
+                                        admin-managed content, and secure data processing.
                                     </li>
                                     <li>
-                                        Implement and integrate RESTful APIs in Node.js and
-                                        Express.js, focusing on secure, efficient data flow.
+                                        Designed responsive and reusable React components based on
+                                        Figma designs to ensure consistent UI across pages.
                                     </li>
                                     <li>
-                                        Work with MongoDB for schema design, query optimization, and
-                                        application-side data handling.
+                                        Integrated frontend with backend services, handling form
+                                        validations, error states, and structured data flow.
                                     </li>
                                     <li>
-                                        Deploy and manage applications on Hostinger, including
-                                        environment setup, domains, and DNS configuration.
+                                        Deployed applications on Hostinger, managing builds,
+                                        domains, environment configurations, and DNS settings.
+                                    </li>
+                                    <li>
+                                        Collaborated directly with founders to convert business
+                                        requirements into scalable technical solutions.
                                     </li>
                                 </ul>
                             </div>
                         </section>
 
-                        {/* INDUSTRIAL PROJECTS */}
+                        {/* PROJECTS */}
                         <section className="resume-section">
-                            <h2 className="section-title">Industrial Projects</h2>
+                            <h2 className="section-title">Key Projects</h2>
 
-                            {/* 1. Vikah Ecotech */}
-                            <div className="item">
-                                <div className="item-header">
-                                    <h3 className="item-title">Vikah Ecotech</h3>
-                                    <span className="item-meta">
-                                        Recycling Machinery Platform · MERN
-                                    </span>
-                                </div>
-                                <ul className="bullet-list compact-list">
-                                    <li>
-                                        Corporate website with product sections, enquiry flows, and
-                                        trade-fair pages for recycling machinery.
-                                    </li>
-                                    <li>
-                                        Built responsive UI with reusable React components to speed
-                                        up future page development.
-                                    </li>
-                                    <li>
-                                        Live:{" "}
-                                        <a
-                                            href="https://www.vikahecotech.com/"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            vikahecotech.com
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            {/* 2. RubberScrapMart */}
+                            {/* RubberScrapMart */}
                             <div className="item">
                                 <div className="item-header">
                                     <h3 className="item-title">RubberScrapMart</h3>
-                                    <span className="item-meta">B2B Marketplace · MERN</span>
+                                    <span className="item-meta">
+                                        B2B Marketplace · MERN Stack
+                                    </span>
                                 </div>
-                                <ul className="bullet-list compact-list">
+
+                                <ul className="bullet-list">
                                     <li>
-                                        B2B marketplace for buying and selling rubber scrap with
-                                        product listings and enquiry flows.
+                                        Designed and developed a full-fledged B2B marketplace for
+                                        buying and selling rubber scrap.
                                     </li>
                                     <li>
-                                        Designed SEO-friendly architecture and optimized rendering
-                                        to improve performance and discoverability.
+                                        Implemented secure authentication flows including user
+                                        login, signup, admin login, and forgot password.
                                     </li>
                                     <li>
-                                        Live:{" "}
+                                        Built RESTful backend APIs using Node.js and Express.js to
+                                        manage users, products, enquiries, and orders.
+                                    </li>
+                                    <li>
+                                        Designed MongoDB schemas and optimized queries for invoices,
+                                        orders, and user data.
+                                    </li>
+                                    <li>
+                                        Implemented invoice generation and automated email
+                                        notifications.
+                                    </li>
+                                    <li>
+                                        Developed admin dashboards for managing listings,
+                                        enquiries, and user activity.
+                                    </li>
+                                    <li>
+                                        Handled complete deployment and production configuration.
+                                    </li>
+                                    <li>
                                         <a
                                             href="https://rubberscrapmart.com/"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            rubberscrapmart.com
+                                            Live Demo
                                         </a>
                                     </li>
                                 </ul>
                             </div>
 
-                            {/* 3. Vikah Rubbers */}
+                            {/* Vikah Ecotech Platform */}
                             <div className="item">
                                 <div className="item-header">
-                                    <h3 className="item-title">Vikah Rubbers</h3>
+                                    <h3 className="item-title">Vikah Ecotech Platform</h3>
                                     <span className="item-meta">
-                                        Manufacturing Website · React
+                                        Recycling Machinery Platform · React-based Web Application
                                     </span>
                                 </div>
+
                                 <ul className="bullet-list compact-list">
                                     <li>
-                                        Product and capability showcase site for a rubber
-                                        manufacturing company.
+                                        Developed enquiry management and content-driven pages for
+                                        recycling machinery and industrial services.
                                     </li>
                                     <li>
-                                        Worked with stakeholders to structure product taxonomy for
-                                        clearer navigation and better lead capture.
+                                        Integrated frontend with server-side systems for data
+                                        handling and request processing.
                                     </li>
                                     <li>
-                                        Live:{" "}
+                                        Converted business workflows into scalable and
+                                        maintainable UI components.
+                                    </li>
+                                    <li>
                                         <a
-                                            href="https://vikahrubbers.com/"
+                                            href="https://www.vikahecotech.com/"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            vikahrubbers.com
+                                            Live Demo
                                         </a>
                                     </li>
                                 </ul>
                             </div>
 
-                            {/* 4. Lava Rubber LLC */}
+                            {/* Manufacturing Platform */}
                             <div className="item">
                                 <div className="item-header">
-                                    <h3 className="item-title">Lava Rubber LLC</h3>
+                                    <h3 className="item-title">
+                                        Manufacturing Product Platform
+                                    </h3>
                                     <span className="item-meta">
-                                        Rubber Products & Services · Web
+                                        Enterprise Web Application
                                     </span>
                                 </div>
-                                <ul className="bullet-list compact-list">
-                                    <li>
-                                        Modern website to present rubber products, services, and
-                                        sustainability-focused content.
-                                    </li>
-                                    <li>
-                                        Implemented SEO-driven page structure to improve search
-                                        visibility across global markets.
-                                    </li>
-                                    <li>
-                                        Live:{" "}
-                                        <a
-                                            href="https://lavarubberllc.com/"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            lavarubberllc.com
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
 
-                            {/* 5. VSSI */}
-                            <div className="item">
-                                <div className="item-header">
-                                    <h3 className="item-title">VSSI</h3>
-                                    <span className="item-meta">
-                                        Industrial Services Website · Web
-                                    </span>
-                                </div>
                                 <ul className="bullet-list compact-list">
                                     <li>
-                                        Informational site with services overview, company details,
-                                        and contact flows for industrial clients.
-                                    </li>
-                                    <li>
-                                        Live:{" "}
-                                        <a
-                                            href="https://vssi.in/"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            vssi.in
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            {/* 6. LG Industry */}
-                            <div className="item">
-                                <div className="item-header">
-                                    <h3 className="item-title">LG Industry</h3>
-                                    <span className="item-meta">
-                                        Rubber Crumb & Granules · Web
-                                    </span>
-                                </div>
-                                <ul className="bullet-list compact-list">
-                                    <li>
-                                        Product site for rubber crumb and granules, targeting
+                                        Designed product taxonomy and navigation structure for
                                         industrial buyers.
                                     </li>
                                     <li>
-                                        Live:{" "}
-                                        <a
-                                            href="https://lgindustry.in/"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            lgindustry.in
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            {/* 7. Saraswathi Rubbers */}
-                            <div className="item">
-                                <div className="item-header">
-                                    <h3 className="item-title">Saraswathi Rubbers</h3>
-                                    <span className="item-meta">
-                                        Industrial Rubber Manufacturer · Web
-                                    </span>
-                                </div>
-                                <ul className="bullet-list compact-list">
-                                    <li>
-                                        Company website highlighting industrial rubber products and
-                                        manufacturing capabilities.
-                                    </li>
-                                    <li>
-                                        Live:{" "}
-                                        <a
-                                            href="https://www.saraswathirubbers.com/"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            saraswathirubbers.com
-                                        </a>
+                                        Improved maintainability by separating UI, business logic,
+                                        and backend integration layers.
                                     </li>
                                 </ul>
                             </div>
@@ -295,6 +205,7 @@ function Resume() {
 
                     {/* RIGHT SIDEBAR */}
                     <aside className="side-column">
+                        {/* CONTACT */}
                         <section className="side-section">
                             <h2 className="side-title">Contact</h2>
                             <ul className="contact-list">
@@ -355,73 +266,43 @@ function Resume() {
                             </ul>
                         </section>
 
+                        {/* SKILLS */}
                         <section className="side-section">
                             <h2 className="side-title">Skills</h2>
 
                             <div className="skill-group">
                                 <p className="skill-label">Programming</p>
-                                <div className="skill-tags">
-                                    <span className="skill-tag">HTML</span>
-                                    <span className="skill-tag">CSS</span>
-                                    <span className="skill-tag">JavaScript</span>
-                                    <span className="skill-tag">Python</span>
-                                </div>
+                                <p className="skill-inline-text">Java, JavaScript, Python</p>
                             </div>
 
                             <div className="skill-group">
-                                <p className="skill-label">Frameworks</p>
-                                <div className="skill-tags">
-                                    <span className="skill-tag">React.js</span>
-                                    <span className="skill-tag">Node.js</span>
-                                    <span className="skill-tag">Express.js</span>
-                                    <span className="skill-tag">Bootstrap</span>
-                                    <span className="skill-tag">jQuery</span>
-                                </div>
+                                <p className="skill-label">Frontend</p>
+                                <p className="skill-inline-text">React.js, HTML, CSS, Bootstrap</p>
                             </div>
 
                             <div className="skill-group">
-                                <p className="skill-label">Design</p>
-                                <div className="skill-tags">
-                                    <span className="skill-tag">Figma</span>
-                                    <span className="skill-tag">Canva</span>
-                                    <span className="skill-tag">Adobe XD</span>
-                                </div>
+                                <p className="skill-label">Backend</p>
+                                <p className="skill-inline-text">
+                                    Node.js, Express.js, REST APIs, Authentication, Role-Based Access
+                                </p>
                             </div>
 
                             <div className="skill-group">
                                 <p className="skill-label">Databases</p>
-                                <div className="skill-tags">
-                                    <span className="skill-tag">MongoDB</span>
-                                    <span className="skill-tag">SQL</span>
-                                </div>
+                                <p className="skill-inline-text">MongoDB, SQL</p>
                             </div>
 
                             <div className="skill-group">
-                                <p className="skill-label">Data Structures & Algorithms</p>
-                                <p className="skill-inline-text">Strong fundamentals</p>
+                                <p className="skill-label">DSA / CS Fundamentals</p>
+                                <p className="skill-inline-text">
+                                    Arrays, Strings, HashMaps, Stack, Queue, Linked List, Recursion, Trees
+                                </p>
                             </div>
 
-                            <div className="skill-group">
-                                <p className="skill-label">Data & ML Stack</p>
-                                <div className="skill-tags">
-                                    <span className="skill-tag">NumPy</span>
-                                    <span className="skill-tag">Pandas</span>
-                                    <span className="skill-tag">Matplotlib</span>
-                                    <span className="skill-tag">Seaborn</span>
-                                    <span className="skill-tag">Scikit-learn</span>
-                                    <span className="skill-tag">TensorFlow</span>
-                                    <span className="skill-tag">Keras</span>
-                                </div>
-                            </div>
 
                             <div className="skill-group">
-                                <p className="skill-label">Tools / Platforms</p>
-                                <div className="skill-tags">
-                                    <span className="skill-tag">Git</span>
-                                    <span className="skill-tag">GitHub</span>
-                                    <span className="skill-tag">Hostinger</span>
-                                    <span className="skill-tag">SEO Tools</span>
-                                </div>
+                                <p className="skill-label">Tools & Deployment</p>
+                                <p className="skill-inline-text">Git, GitHub, Hostinger</p>
                             </div>
                         </section>
 
@@ -429,15 +310,9 @@ function Resume() {
                         <section className="side-section">
                             <h2 className="side-title">Highlights</h2>
                             <ul className="side-bullets">
-                                <li>7+ real-world production websites shipped.</li>
-                                <li>
-                                    End-to-end ownership: requirements → UI/UX → development →
-                                    deployment.
-                                </li>
-                                <li>
-                                    Strong collaboration with founders, designers, and backend
-                                    teams.
-                                </li>
+                                <li>Developed secure auth systems with admin & user roles.</li>
+                                <li>Implemented invoice generation and email automation.</li>
+                                <li>Owned features end-to-end from backend to deployment.</li>
                             </ul>
                         </section>
 
@@ -445,38 +320,24 @@ function Resume() {
                         <section className="side-section">
                             <h2 className="side-title">Education</h2>
 
-                            {/* B.Tech */}
                             <div className="edu-item">
-                                <p className="edu-course" style={{ color: "#000" }}>
-                                    B.Tech – Computer Science & Engineering
-                                </p>
-                                <p className="edu-meta">IIIT, RGUKT – RK Valley</p>
-                                <p className="edu-meta">2020 – 2024</p>
-                                <p className="edu-meta"><strong>CGPA:</strong> 8.3</p>
+                                <p className="edu-course">B.Tech – Computer Science & Engineering</p>
+                                <p className="edu-meta">IIIT RGUKT – RK Valley</p>
+                                <p className="edu-meta">2020 – 2024 | CGPA: 8.3</p>
                             </div>
 
-                            {/* PUC */}
                             <div className="edu-item">
-                                <p className="edu-course" style={{ color: "#000" }}>
-                                    Pre-University Course (PUC) – M.P.C
-                                </p>
-                                <p className="edu-meta">IIIT, RGUKT – RK Valley</p>
-                                <p className="edu-meta">2018 – 2020</p>
-                                <p className="edu-meta"><strong>CGPA:</strong> 8.66</p>
+                                <p className="edu-course">Pre-University Course (PUC) – MPC</p>
+                                <p className="edu-meta">IIIT RGUKT – RK Valley</p>
+                                <p className="edu-meta">2018 – 2020 | CGPA: 8.66</p>
                             </div>
 
-                            {/* SSC */}
                             <div className="edu-item">
-                                <p className="edu-course" style={{ color: "#000" }}>
-                                    Secondary School Certificate (SSC)
-                                </p>
-                                <p className="edu-meta">GVEZPGHS, Dharmavaram</p>
-                                <p className="edu-meta">2018</p>
-                                <p className="edu-meta"><strong>GPA:</strong> 10</p>
+                                <p className="edu-course">Secondary School Certificate (SSC)</p>
+                                <p className="edu-meta">GVEZP GHS, Dharmavaram</p>
+                                <p className="edu-meta">2018 | GPA: 10</p>
                             </div>
                         </section>
-
-
                     </aside>
                 </main>
             </div>

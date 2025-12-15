@@ -82,14 +82,14 @@
 
 .resume-name {
   margin: 0;
-  font-size: 1.9rem;
+  font-size: 1.8;
   font-weight: 700;
   color: #1f2937;
 }
 
 .resume-role {
   margin: 2px 0 0;
-  font-size: 0.9rem;
+  font-size: 0.98rem;
   font-weight: 500;
   color: #4b5563;
 }
@@ -97,9 +97,8 @@
 /* ===== MAIN SECTIONS ===== */
 
 .resume-section {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
-
 .section-title {
   font-size: 0.84rem;
   font-weight: 700;
@@ -111,12 +110,12 @@
 
 .section-text {
   margin: 0;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: #111827;
 }
 
 .item {
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .item-header {
@@ -151,6 +150,11 @@
   margin-top: 2px;
 }
 
+
+.bullet-list li {
+  line-height: 1.35
+}
+
 .compact-list li + li {
   margin-top: 1px;
 }
@@ -158,7 +162,7 @@
 /* ===== SIDEBAR SECTIONS ===== */
 
 .side-section {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 
 .side-title {
@@ -333,15 +337,17 @@ a:hover {
 
   .section-title,
   .side-title {
-    font-size: 0.65rem;
+    font-size: 0.9rem;
   }
 
-  .section-text {
-    font-size: 0.7rem;
-  }
+ 
+.section-text {
+    font-size: 0.9rem;    /* was 0.82rem */
+  line-height: 1.45;
+}
 
   .item-title {
-    font-size: 0.74rem;
+    font-size: 0.82rem;
   }
 
   .item-meta,
@@ -352,8 +358,8 @@ a:hover {
 
   .bullet-list,
   .side-bullets {
-    font-size: 0.7rem;
-  }
+font-size: 0.88rem;   /* was ~0.79rem */
+  line-height: 1.4;  }
 }
 
 /* SKILL GROUPS */
@@ -387,4 +393,12 @@ a:hover {
   margin: 0;
   font-size: 0.75rem;
   color: #374151;
+}
+.project-link {
+  text-decoration: underline;
+  color: #1a0dab; /* optional: Google-style link color */
+}
+
+.project-link:hover {
+  color: #0b0080; /* optional: darker on hover */
 }

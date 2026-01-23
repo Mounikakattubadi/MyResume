@@ -272,39 +272,47 @@ function Resume() {
 
                             <div className="skill-group">
                                 <p className="skill-label">Programming</p>
-                                <p className="skill-inline-text">Java, JavaScript, Python</p>
+                                <p className="skill-inline-text">
+                                    Java, JavaScript (ES6+), TypeScript, Python
+                                </p>
                             </div>
 
                             <div className="skill-group">
-                                <p className="skill-label">Frontend</p>
-                                <p className="skill-inline-text">React.js, HTML, CSS, Bootstrap</p>
+                                <p className="skill-label">Frontend (Web)</p>
+                                <p className="skill-inline-text">
+                                    React.js, Vue.js, Vite, HTML5, CSS, TailwindCSS, Bootstrap
+                                </p>
+                            </div>
+
+                            <div className="skill-group">
+                                <p className="skill-label">Mobile Development</p>
+                                <p className="skill-inline-text">
+                                    React Native
+                                </p>
                             </div>
 
                             <div className="skill-group">
                                 <p className="skill-label">Backend</p>
                                 <p className="skill-inline-text">
-                                    Node.js, Express.js, REST APIs, Authentication, Role-Based Access
+                                    Node.js, Express.js, REST APIs
                                 </p>
                             </div>
 
                             <div className="skill-group">
                                 <p className="skill-label">Databases</p>
-                                <p className="skill-inline-text">MongoDB, SQL</p>
-                            </div>
-
-                            <div className="skill-group">
-                                <p className="skill-label">DSA / CS Fundamentals</p>
                                 <p className="skill-inline-text">
-                                    Arrays, Strings, HashMaps, Stack, Queue, Linked List, Recursion, Trees
+                                    MongoDB, Mongoose, SQL
                                 </p>
                             </div>
 
-
                             <div className="skill-group">
                                 <p className="skill-label">Tools & Deployment</p>
-                                <p className="skill-inline-text">Git, GitHub, Hostinger</p>
+                                <p className="skill-inline-text">
+                                    Git, GitHub, CI/CD Pipelines, Hostinger, Netlify
+                                </p>
                             </div>
                         </section>
+
 
                         {/* HIGHLIGHTS */}
                         <section className="side-section">

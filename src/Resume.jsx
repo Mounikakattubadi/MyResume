@@ -34,7 +34,7 @@ function Resume() {
                         <header className="name-block">
                             <h1 className="resume-name">Mounika Kattubadi</h1>
                             <p className="resume-role">
-                                Software Engineer · Full Stack (MERN)
+                                Full Stack Developer
                             </p>
                         </header>
 
@@ -42,9 +42,10 @@ function Resume() {
                         <section className="resume-section">
                             <h2 className="section-title">Summary</h2>
                             <p className="section-text">
-                                Full Stack Software Engineer with hands-on experience building and deploying production-grade web applications for B2B and manufacturing domains. Completed 7+
-                                industrial projects. Strong backend experience in designing REST APIs, authentication systems, invoice generation, email automation, and admin workflows. Comfortable owning features end-to-end from frontend to backend and deployment.
+                                Full Stack Software Engineer with hands-on experience building and deploying production-grade web applications for B2B and manufacturing domains. Completed 7+ industrial projects. Strong backend experience in designing REST APIs, authentication systems, invoice generation, email automation, and admin workflows. Comfortable owning features end-to-end from frontend to backend and deployment.
+                                Strong communication skills, quick learner, and easily grasps new technologies and workflows.
                             </p>
+
 
                         </section>
 
@@ -108,10 +109,6 @@ function Resume() {
                                     <li>
                                         Designed and developed a full-fledged B2B marketplace for
                                         buying and selling rubber scrap.
-                                    </li>
-                                    <li>
-                                        Implemented secure authentication flows including user
-                                        login, signup, admin login, and forgot password.
                                     </li>
                                     <li>
                                         Built RESTful backend APIs using Node.js and Express.js to
@@ -346,6 +343,17 @@ function Resume() {
                                 <p className="edu-meta">2018 | GPA: 10</p>
                             </div>
                         </section>
+
+                        {/* STRENGTHS */}
+                        <section className="side-section">
+                            <h2 className="side-title">Strengths</h2>
+                            <ul className="side-bullets">
+                                <li>Strong Communication Skills</li>
+                                <li>Quick Learner</li>
+                                <li>Easy Grasping of New Concepts</li>
+                            </ul>
+                        </section>
+
                     </aside>
                 </main>
             </div>

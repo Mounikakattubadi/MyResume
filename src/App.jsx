@@ -1,8 +1,8 @@
 import React from "react";
-import Resume from "./Resume";
+import PmResume from "./PmResume";
 
 function App() {
-  return <Resume />;
+  return <PmResume />;
 }
 
 export default App;

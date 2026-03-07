@@ -277,7 +277,7 @@ function Resume() {
                             <div className="skill-group">
                                 <p className="skill-label">Frontend (Web)</p>
                                 <p className="skill-inline-text">
-                                    React.js, Vue.js, Vite, HTML5, CSS, TailwindCSS, Bootstrap
+                                    React.js,Angular, Vue.js, Vite, HTML5, CSS, TailwindCSS, Bootstrap
                                 </p>
                             </div>
 
